@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контроль над цифровой зависимостью</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        
+        /* ОБО МНЕ */
+        .hero { text-align: center; padding: 60px 20px; }
+        .hero img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 2px solid #333; margin-bottom: 20px; }
+        .hero h1 { font-size: 28px; margin-bottom: 10px; color: #fff; }
+        .hero p { color: #888; font-size: 16px; }
+        
+        /* ПРОДУКТЫ */
+        .products { padding: 40px 0; }
+        .products h2 { font-size: 24px; margin-bottom: 30px; text-align: center; color: #fff; }
+        .product-card { background: #151515; border: 1px solid #222; border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+        .product-card h3 { font-size: 18px; margin-bottom: 8px; color: #fff; }
+        .product-card .price { font-size: 22px; font-weight: bold; color: #4ade80; margin-bottom: 12px; }
+        .product-card p { color: #888; font-size: 14px; margin-bottom: 16px; }
+        .btn { display: inline-block; background: #4ade80; color: #000; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; border: none; cursor: pointer; }
+        .btn:hover { background: #3bcf6e; }
+        .btn-outline { background: transparent; border: 1px solid #444; color: #e0e0e0; }
+        .btn-outline:hover { border-color: #666; }
+        
+        /* КЕЙСЫ */
+        .cases { padding: 40px 0; }
+        .cases h2 { font-size: 24px; margin-bottom: 30px; text-align: center; color: #fff; }
+        .case-card { background: #151515; border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+        .case-card .name { font-weight: 600; color: #fff; margin-bottom: 8px; }
+        .case-card .quote { font-style: italic; color: #4ade80; margin-bottom: 8px; }
+        .case-card .desc { color: #888; font-size: 14px; }
+        
+        /* КАЛЬКУЛЯТОР */
+        .calc { padding: 40px 0; }
+        .calc h2 { font-size: 24px; margin-bottom: 20px; text-align: center; color: #fff; }
+        .calc-box { background: #151515; border-radius: 12px; padding: 24px; }
+        .calc-box label { display: block; margin-bottom: 8px; color: #ccc; font-size: 14px; }
+        .calc-box input { width: 100%; padding: 10px; background: #0a0a0a; border: 1px solid #333; border-radius: 6px; color: #fff; margin-bottom: 16px; font-size: 16px; }
+        .calc-result { text-align: center; padding: 20px; background: #0a0a0a; border-radius: 8px; margin-top: 16px; }
+        .calc-result .num { font-size: 32px; font-weight: bold; color: #4ade80; }
+        .calc-result .label { color: #888; font-size: 14px; }
+        
+        /* ТАРИФЫ */
+        .tariffs { padding: 40px 0; }
+        .tariffs h2 { font-size: 24px; margin-bottom: 30px; text-align: center; color: #fff; }
+        
+        /* АНКЕТА */
+        .form { padding: 40px 0; }
+        .form h2 { font-size: 24px; margin-bottom: 20px; text-align: center; color: #fff; }
+        .form-box { background: #151515; border-radius: 12px; padding: 24px; }
+        .form-box input, .form-box textarea { width: 100%; padding: 12px; background: #0a0a0a; border: 1px solid #333; border-radius: 6px; color: #fff; margin-bottom: 16px; font-size: 14px; font-family: inherit; }
+        .form-box textarea { min-height: 100px; resize: vertical; }
+        
+        /* ФУТЕР */
+        footer { text-align: center; padding: 40px 20px; color: #555; font-size: 14px; border-top: 1px solid #1a1a1a; }
+        footer a { color: #4ade80; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <!-- ОБО МНЕ -->
+        <section class="hero">
+            <img src="https://via.placeholder.com/120" alt="Фото">
+            <h1>Я помогаю выйти из цифровой зависимости</h1>
+            <p>112 кг, долги, ноль энергии. Убрал быстрый контент — минус 12 кг, энергия вернулась.</p>
+        </section>
+
+        <!-- ПРОДУКТЫ -->
+        <section class="products">
+            <h2>Продукты</h2>
+            
+            <div class="product-card">
+                <h3>CONTROL 14 — PDF</h3>
+                <div class="price">$10</div>
+                <p>14 дней программы. Задания и объяснения. Скачивается сразу после оплаты.</p>
+                <a href="ССЫЛКА_НА_БОТА" class="btn">Купить</a>
+            </div>
+            
+            <div class="product-card">
+                <h3>Закрытый канал CONTROL</h3>
+                <div class="price">$35</div>
+                <p>Доступ навсегда. Комьюнити, посты, голосовые, разборы.</p>
+                <a href="https://t.me/ТВОЙ_НИК" class="btn btn-outline">Написать мне</a>
+            </div>
+            
+            <div class="product-card">
+                <h3>Консультация + сопровождение</h3>
+                <div class="price">$120</div>
+                <p>PDF + доступ в CONTROL + созвон 60 минут + 2 недели переписки.</p>
+                <a href="https://t.me/ТВОЙ_НИК" class="btn btn-outline">Написать мне</a>
+            </div>
+            
+            <div class="product-card">
+                <h3>Личное ведение</h3>
+                <div class="price">$800</div>
+                <p>Работа до результата. Созвоны раз в неделю. Доступ в CONTROL.</p>
+                <a href="https://t.me/ТВОЙ_НИК" class="btn btn-outline">Написать мне</a>
+            </div>
+        </section>
+
+        <!-- КЕЙСЫ -->
+        <section class="cases">
+            <h2>Кейсы</h2>
+            
+            <div class="case-card">
+                <div class="name">Артём, 22</div>
+                <div class="quote">«Я теперь просыпаюсь, будто ночью энергетик выпил. Полон энергии.»</div>
+                <div class="desc">До: 5–7 часов в ленте и играх, откладывал запуск канала. После: запустил канал, энергия вернулась. 1,5 месяца.</div>
+            </div>
+            
+            <div class="case-card">
+                <div class="name">Максим, 20</div>
+                <div class="quote">«Теперь я просто боюсь откладывать свои дела.»</div>
+                <div class="desc">До: 6–7 часов в играх и ленте, ноль энергии. После: начал ходить в зал, перестал откладывать. 1,5 месяца.</div>
+            </div>
+        </section>
+
+        <!-- КАЛЬКУЛЯТОР -->
+        <section class="calc">
+            <h2>Калькулятор потерянного времени</h2>
+            <div class="calc-box">
+                <label>Сколько часов в день ты тратишь на ленту и игры?</label>
+                <input type="number" id="hours" placeholder="Например: 5" min="0" max="24">
+                <button class="btn" onclick="calculate()">Рассчитать</button>
+                <div class="calc-result" id="result" style="display:none;">
+                    <div class="num" id="num"></div>
+                    <div class="label">часов в год ты теряешь</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ТАРИФЫ -->
+        <section class="tariffs">
+            <h2>Тарифы</h2>
+            <div class="product-card">
+                <h3>PDF CONTROL 14</h3>
+                <div class="price">$10</div>
+                <a href="ССЫЛКА_НА_БОТА" class="btn">Купить</a>
+            </div>
+            <div class="product-card">
+                <h3>Закрытый канал</h3>
+                <div class="price">$35</div>
+                <a href="https://t.me/ТВОЙ_НИК" class="btn btn-outline">Написать</a>
+            </div>
+            <div class="product-card">
+                <h3>Консультация</h3>
+                <div class="price">$120</div>
+                <a href="https://t.me/ТВОЙ_НИК" class="btn btn-outline">Написать</a>
+            </div>
+            <div class="product-card">
+                <h3>Личное ведение</h3>
+                <div class="price">$800</div>
+                <a href="https://t.me/ТВОЙ_НИК" class="btn btn-outline">Написать</a>
+            </div>
+        </section>
+
+        <!-- АНКЕТА -->
+        <section class="form">
+            <h2>Оставить заявку</h2>
+            <div class="form-box">
+                <form action="https://formspree.io/f/ТВОЙ_ID" method="POST">
+                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="text" name="contact" placeholder="Telegram или WhatsApp" required>
+                    <textarea name="message" placeholder="Что беспокоит?" required></textarea>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ФУТЕР -->
+        <footer>
+            <p>Telegram: <a href="https://t.me/ТВОЙ_НИК">@ТВОЙ_НИК</a></p>
+        </footer>
+
+    </div>
+
+    <script>
+        function calculate() {
+            const hours = document.getElementById('hours').value;
+            if (!hours || hours <= 0) return;
+            const yearHours = hours * 365;
+            document.getElementById('num').textContent = yearHours;
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
